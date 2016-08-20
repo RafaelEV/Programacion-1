@@ -1,0 +1,19 @@
+// Hola Mundo.cpp : Defines the entry point for the console application.
+//Name:Rafael Escobar Veliz
+//Librerias
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+//Cuerpo Principal
+int main()
+{	
+	cout<<"hola Mundo \n";
+    cout<<"Soy Rafael Escobar";
+	getch();
+	return 0;
+}
+
