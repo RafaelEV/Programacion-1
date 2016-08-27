@@ -1,0 +1,9 @@
+Proceso AreaDelCuadrado
+	Definir lado como real;
+	Escribir "ingresar tamaño del lado: ";
+	Leer lado;
+	area <- (lado*lado);
+	Escribir "resultado del area es: ",area;
+	
+	
+FinProceso
