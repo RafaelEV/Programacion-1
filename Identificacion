@@ -1,0 +1,25 @@
+Proceso IDENTIFICACION 
+	Definir Edad Como Entero;
+	Definir nota Como Real;
+	Definir letraDNI Como Caracter;
+	Definir NombreYApellido como cadena;
+	Definir encontrado Como Logico;
+	
+	Nota <- 9.5;
+	Edad <- 10;
+	LetraDNI <- "j";
+	NombreYApellido <-"Rafael Escobar";
+	encontrado <- Falso;
+	
+	Escribir  "introduce la nota";
+	Leer nota;
+	Escribir "introduce la letra DNI";
+	Leer LetraDNI;
+	Escribir "introduce el nombre y apellido";
+	Leer NombreYApellido;
+	
+	Escribir "la nota es", nota;
+	Escribir "la letra de DNI es", LetraDNI;
+	Escribir "el nombre y apellido es", NombreYApellido;
+	
+FinProceso
