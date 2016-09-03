@@ -1,0 +1,17 @@
+Proceso Comparar
+	Leer N1,N2,N3
+	Si N1>N2 Entonces
+		Si N1>N3 Entonces
+			Escribir "Mayor: ",N1
+		Sino
+			Escribir "Mayor: ",N3
+		FinSi
+	Sino
+		Si N2>N3 Entonces
+			Escribir "Mayor: ",N2
+		Sino
+			Escribir "Mayor: ",N3
+		FinSi
+	FinSi
+FinProceso
+
