@@ -1,0 +1,25 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+  void main()
+{
+	float K,I,N,P;
+	cout<<"Ingrese el capital inicial: ";
+	cin>> K;
+	cout<<"Ingrese el interes: ";
+	cin>> I;
+	cout<<"ingrese los dias: ";
+	cin>> N;
+
+	 P = K*I*N/360;
+
+	cout<<"El interes es: "<<P;
+
+	getch();
+	
+}
