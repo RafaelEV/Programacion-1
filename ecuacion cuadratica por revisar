@@ -1,0 +1,51 @@
+// e.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h" 
+
+using namespace std;
+
+int main ()
+{ 
+  float a,b,c,D,x,x1,x2,xr,xi;
+  cout<<"ingrese a:";
+  cin>>a;
+   if(a==0)
+	   cout<<"error infinito";
+   else
+   {
+  cout<<"ingrese b:";
+  cin>>b;
+  cout<<"ingrese c:";
+  cin>>c;
+  D=pow(b,2)-4*(a)*(c);
+ 
+  if (D>0)
+  {
+    x1=-b+sqrt(D)/2*(a);
+    x2=-b-sqrt(D)/2*(a);
+  cout<<"\nHay dos soluciones reales"<<x1<<" y "<<x2;
+  }
+  else
+   if (D==0)
+ {
+     x=-b/2*(a);
+     cout<<"hay una solucion"<<x;
+ }
+   else 
+   {
+    xr=-b/2*(a);
+    cout<<"es real:";
+    xi=sqrt(-D)/2*(a);
+    cout << "\nSoluciones Imaginarias"<<endl;
+    cout << "X1: "<<xr<<" + "<< xi << "i"<<endl;
+    cout << "X2: "<<xr<<" - "<< xi << "i"<<endl;
+   }
+   }
+	getch();
+  return 0;
+  }
+
