@@ -1,0 +1,29 @@
+// suma for.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{ 
+	int a,s,n;
+	do{
+	    cout<<"ingrese el numero de elementos a sumar: ";
+	    cin>> n;
+	}while (n<=0);
+	s=0;
+	a=1;
+	cout<<"s=";
+	for (int i=2;i<=n;i=i+2)
+		{
+			cout<<i<<"+";
+			s=s+i*a;
+			a=a*(-1);// esta operacion permite intercambiar los signos
+	}
+	cout<<"ingrese la suma de la serie es: "<<s;
+	getch();
+}
+	
