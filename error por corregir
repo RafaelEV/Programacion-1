@@ -1,0 +1,34 @@
+// for.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float s,x;
+	int n,fact,flag;
+	s=0; //acumulador de suma
+	flag=-1; //inicia la serie en negativo
+    fact=1; //aculador de producto
+	cout<<"ingrese el numero de elementos de la serie: ";
+	cin>> n;
+	cout<<"ingrese el valor de x: ";
+	cin>> x;
+	cout<<"s=";
+	for(int i=1;i<=n;i=i++) // Marca el numero de elementos
+	{
+
+		s=s+flag*(pow(x,(2*1-1))/fact);
+		cout<<x<<"^"<<(2*1-1)<<"/"<<fact<<"+";
+		fact=fact*(i+1)+(i+2);
+		flag=flag*-1;
+	}
+	cout<<"La suma es : "<<s;
+	getch();
+}
+  
