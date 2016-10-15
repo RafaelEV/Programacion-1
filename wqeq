@@ -1,0 +1,27 @@
+// serie.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float x;
+	int e,n,s,a;
+	cout<<" ingrese la cantidad de terminos a sumar: ";
+	cin>>n;
+	s=0;
+	a=-1;
+	e=1;
+	for(x=1;x<=n;x++)
+	{
+		s=s+pow(x,e+1);
+	    a=x*a;
+	}
+	cout<<" el resultado es: "<<s;
+	getch();
+}
