@@ -1,0 +1,76 @@
+// examen parcial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int d,v,i;
+	cout<<"Ingrese el primer numero: ";
+	cin>> v;
+	cout<<"ingrese el segundo numero: ";
+	cin>> i;
+	d=0;
+	if (i<v)
+		if (v%i==0)
+			cout <<v<<" es divisible por "<<i;
+		else
+			cout <<v<<" no es divisible por "<<i;
+	else
+		if (i%v==0)
+			cout <<v<<" es divisible por "<<i;
+		else
+			cout <<v<<" no es divisible por "<<i;
+	getch();
+}
+
+
+
+
+version 2 
+
+
+
+
+
+
+// examen parcial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int d,v,i;
+	cout<<"Ingrese el primer numero: ";
+	cin>> v;
+	cout<<"ingrese el segundo numero: ";
+	cin>> i;
+	d=0;
+	if (i<=v)
+	{
+		d=v/i;
+	    if (0==(v-i*d))
+		    cout<<v<<" si es divisible entre "<<i;
+        else
+		    cout<<v<<" no es divisible entre "<<i;
+	}
+	else
+	{
+		d=i/v;
+	    if (0==(v-i*d))
+		    cout<<v<<" si es divisible entre "<<i;
+        else
+		    cout<<v<<" no es divisible entre "<<i;
+	}
+
+	getch ();
+}
