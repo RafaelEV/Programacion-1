@@ -1,0 +1,74 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+bool PrimooNo(int numero1); 
+
+void main()
+{
+	int numero1;
+	bool primo;
+    cout<<"ingrese numero";
+	cin>> numero1;
+
+    primo=PrimooNo(numero1);
+	
+	if(primo)
+			cout<<"no es numero primo";
+		else
+			cout<<"si es numero primo";
+			getch();
+
+}
+
+
+bool PrimooNo(int numero1)
+{
+	bool aux;
+	for(int i=2;i<numero1;i++)
+		if(numero1%i==0)
+			aux=false;
+		else
+			aux=true;
+	return aux;
+}
+or
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+bool PrimooNo(int numero1); 
+
+void main()
+{
+	int numero1;
+	bool primo;
+    cout<<"ingrese numero";
+	cin>> numero1;
+
+    primo=PrimooNo(numero1);
+	
+	if(primo)
+			cout<<"si es numero primo";
+		else
+			cout<<"no es numero primo";
+			getch();
+
+}
+
+
+bool PrimooNo(int numero1)
+{
+	bool aux;
+	for(int i=2;i<numero1;i++)
+		if(numero1%i==0)
+			{aux=false;
+		
+	return aux;}
+}
