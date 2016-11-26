@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void OrdenarVector(int N[],int T);
+void CargarVector(int N[],int T);
+void MostrarVector(int N[],int T);
+
+void main()
+{
+	int N[MAX],T,V;
+	do{ 
+	cout<<"ingresar el tamaño del vector: ";
+	cin>> V;
+	}while((V<0) || (V>MAX));
+	
+	CargarVector(N,V);
+	OrdenarVector(N,V);
+	MostrarVector(N,V);
+	getch();
+}
+
+void CargarVector(int N[],int T)
+{
+	for(int i=0;i<T;i++)
+	{
+		cout<<"ingrese el vector: ";
+		cin>> N[i];
+	}
+}
+
+void MostrarVector(int N[],int T)
+{
+	for(int i=0;i<T;i++)
+		cout<<N[i]<<"\n";
+}
+
+void OrdenarVector(int N[],int T)
+{ 
+	float aux;
+	for(int i=0;i<T;i++)
+	
+		for(int p=i+1;p<T;p++)
+			if(N[i]>N[p])
+			{aux=N[p];
+	         N[p]=N[i];
+			 N[i]=aux;
+		}
+	
+}
